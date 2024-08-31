@@ -1,0 +1,14 @@
+@import 'swiper/swiper-bundle.css';
+
+.slider {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  span{
+    color: red;
+  }
