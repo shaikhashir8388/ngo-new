@@ -1,30 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const images = [
-  '../src/images/Capture1.PNG',
-  '../src/images/Capture2.PNG',
-  '../src/images/Capture3.PNG',
-  '../src/images/Capture1.PNG',
-  '../src/images/Capture2.PNG',
-  '../src/images/Capture3.PNG',
-  '../src/images/Capture1.PNG',
-  '../src/images/Capture2.PNG',
-  '../src/images/Capture3.PNG',
-  '../src/images/Capture1.PNG',
-  '../src/images/Capture2.PNG',
-  '../src/images/Capture3.PNG',
-  '../src/images/Capture1.PNG',
-  '../src/images/Capture2.PNG',
-  '../src/images/Capture3.PNG',
-  '../src/images/Capture1.PNG',
-  '../src/images/Capture2.PNG',
-  '../src/images/Capture3.PNG',
-  '../src/images/Capture1.PNG',
-  '../src/images/Capture2.PNG',
-  '../src/images/Capture3.PNG',
-  '../src/images/Capture1.PNG',
-  '../src/images/Capture2.PNG',
-  '../src/images/Capture3.PNG',
+  '/Capture.PNG',
+  '/Capture1.PNG',
+  '/Capture2.PNG',
+  // Add more images if needed
 ];
 
 const ImageSlider = () => {
@@ -39,24 +19,24 @@ const ImageSlider = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000); // Change slide every 1 seconds
+    const interval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
     return () => clearInterval(interval); // Clear interval on component unmount
   }, [current]);
 
   return (
     <div className="slider relative flex justify-center items-center w-full h-36 overflow-hidden">
       <button
-        className="absolute left-0 text-white bg-red-600 bg-opacity-50 
-        hover:bg-opacity-75 p-2 rounded-full"
+        className="absolute left-0 text-white bg-red-600 bg-opacity-50 hover:bg-opacity-75 p-2 rounded-full"
         onClick={prevSlide}
       >
         ❮
       </button>
-      <div className="slides w-full h-full flex transition-transform duration-200 ease-in-out bg-repeat-x" 
-      
-      data-aos="fade-up"
+      <div
+        className="slides w-full h-full flex transition-transform duration-200 ease-in-out bg-repeat-x"
+        data-aos="fade-up"
         data-aos-duration="3000"
-       style={{ transform: `translateX(-${current * 100}%)` }}>
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
         {images.map((image, index) => (
           <img
             key={index}
@@ -67,8 +47,7 @@ const ImageSlider = () => {
         ))}
       </div>
       <button
-        className="absolute right-0 text-white bg-red-600
-         bg-opacity-50 hover:bg-opacity-75 p-2 rounded-full"
+        className="absolute right-0 text-white bg-red-600 bg-opacity-50 hover:bg-opacity-75 p-2 rounded-full"
         onClick={nextSlide}
       >
         ❯
