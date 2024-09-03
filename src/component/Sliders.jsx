@@ -1,10 +1,11 @@
 import Slider from "react-slick";
-import image1 from '../images/bg1.jpg';
-import image2 from '../images/bg2.jpg';
-import image3 from '../images/bg3.jpg';
-import image4 from '../images/bg4.jpg';
-import image5 from '../images/bg3.jpg'; // Assuming this is intended image
-import image6 from '../images/bg2.jpg';
+
+import image1 from '../../public/bg1.jpg';
+import image2 from '../../public/bg2.jpg';
+import image3 from '../../public/bg3.jpg';
+import image4 from '../../public/bg4.jpg';
+import image5 from '../../public/bg3.jpg'; // Assuming this is intended image
+import image6 from '../../public/bg2.jpg';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

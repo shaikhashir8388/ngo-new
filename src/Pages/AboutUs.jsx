@@ -1,4 +1,3 @@
-import React from 'react';
 import ImageSlider from './ImageSlider';
 import TwoPartitionContainer from './TwoPartitionContainer';
 import PassPro from './PassPro';
@@ -7,8 +6,8 @@ const About = () => {
   return (
     <> 
       <PassPro 
-        backImgsrc="../src/images/Web-Icon.png"
-        secImg="../src/images/aboutBanner.jpg"
+        backImgsrc="../../public/Web-Icon.png"
+        secImg="../../public/aboutBanner.jpg"
         title="About Us"
         p={`A five years ago help human right organization of Pakistan, a charitable and nonprofit organization
            embarked its journey starting from a small camp established at a densely populated area of Jamsheed

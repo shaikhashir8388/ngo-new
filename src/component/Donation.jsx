@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import backImage from '../images/backreomove.png';
+import backImage from '../../public/backreomove.png';
 
 const DonationForm = () => {
   const [step, setStep] = useState(1);
@@ -32,13 +32,6 @@ const DonationForm = () => {
     });
   };
 
-  const handleCategoryChange = (e) => {
-    setFormData({
-      ...formData,
-      category: e.target.value
-    });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
@@ -46,13 +39,13 @@ const DonationForm = () => {
 
   return (
     <div
-      className='flex justify-center items-center min-h-screen w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] m-auto mt-10 shadow-2xl border-l-8 border-b-8 border-red-400'
-      style={{ backgroundImage: `url(${backImage})`, backgroundSize: 'cover' }}
+      className='flex justify-center items-center min-h-screen w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] m-auto mt-10 p-4 sm:p-6 bg-white rounded-md shadow-2xl relative'
+      style={{ backgroundImage: `url(${backImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      <div className='bg-white w-full p-6 rounded-md shadow-xl mt-10 relative bottom-12'>
+      <div className='bg-white w-full p-6 rounded-md shadow-xl'>
         <div className='text-center mb-6'>
-          <h1 style={{ paddingTop: '1rem', margin: 'auto 0', fontWeight: 'normal' }}>
-            <span style={{ color: 'red', fontWeight: 'bold' ,fontSize:'30px'}}>
+          <h1 style={{ paddingTop: '1rem', fontWeight: 'normal' }}>
+            <span style={{ color: 'red', fontWeight: 'bold', fontSize: '28px' }}>
               <Typewriter
                 words={['You Help.', 'We Donate.', 'Make a Difference.', 'Support a Cause.', 'Help Those in Need.', 'Change Lives.']}
                 loop={true}
@@ -65,25 +58,17 @@ const DonationForm = () => {
             </span>
           </h1>
         </div>
+
         <div className='flex justify-between mb-6 space-x-2'>
-          <button
-            className={`p-1 w-1/3 ${step === 1 ? 'bg-red-500 text-white' : 'bg-transparent hover:bg-red-500 text-red-700'} font-semibold py-1 border ${step === 1 ? 'border-transparent' : 'border-red-500'} hover:text-white rounded transition duration-300`}
-            onClick={() => handleTabClick(1)}
-          >
-            Make A Donation
-          </button>
-          <button
-            className={`p-1 w-1/3 ${step === 2 ? 'bg-red-500 text-white' : 'bg-transparent hover:bg-red-500 text-red-700'} font-semibold py-1 border ${step === 2 ? 'border-transparent' : 'border-red-500'} hover:text-white rounded transition duration-300`}
-            onClick={() => handleTabClick(2)}
-          >
-            Your Details
-          </button>
-          <button
-            className={`p-1 w-1/3 ${step === 3 ? 'bg-red-500 text-white' : 'bg-transparent hover:bg-red-500 text-red-700'} font-semibold py-1 border ${step === 3 ? 'border-transparent' : 'border-red-500'} hover:text-white rounded transition duration-300`}
-            onClick={() => handleTabClick(3)}
-          >
-            Payment Method
-          </button>
+          {['Make A Donation', 'Your Details', 'Payment Method'].map((label, index) => (
+            <button
+              key={index}
+              className={`p-1 w-1/3 ${step === index + 1 ? 'bg-red-500 text-white' : 'bg-transparent hover:bg-red-500 text-red-700'} font-semibold py-1 border ${step === index + 1 ? 'border-transparent' : 'border-red-500'} hover:text-white rounded transition duration-300`}
+              onClick={() => handleTabClick(index + 1)}
+            >
+              {label}
+            </button>
+          ))}
         </div>
 
         {step === 1 && (
@@ -105,7 +90,7 @@ const DonationForm = () => {
                 name="category"
                 className='border rounded-full border-black p-2 w-full'
                 value={formData.category}
-                onChange={handleCategoryChange}
+                onChange={handleChange}
               >
                 <option value="health">Health</option>
                 <option value="food">Food</option>

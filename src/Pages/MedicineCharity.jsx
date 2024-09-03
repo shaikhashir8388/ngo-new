@@ -1,11 +1,10 @@
-import React from "react";
 import PassPro from "./PassPro";
 import LeftPro from "./leftPro"; // Ensure correct case for file names
 
 // Import images with correct relative paths
-import backImg from "../images/Web-Icon.png";
-import secImg from "../images/Medicine3.jpg";
-import imgsrc from "../images/Medicine4.jpg";
+import backImg from "../../public/Web-Icon.png";
+import secImg from "../../public/Medicine3.jpg";
+import imgsrc from "../../public/Medicine4.jpg";
 
 const MedicineCharity = () => {
   return (

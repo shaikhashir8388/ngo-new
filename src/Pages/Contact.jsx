@@ -1,11 +1,11 @@
-import React from 'react';
+
 
 const Contact = () => {
   return (
     <div className="flex flex-col md:flex-row h-screen text-red-600">
       <div
         className="md:w-1/2 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/logo.jpg')" }}
+        style={{ backgroundImage: "url('../../public/logo.jpg')" }}
 
       >
         {/* Placeholder image URL, replace with your own image URL */}

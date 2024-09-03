@@ -19,6 +19,7 @@ const MainLayout = () => {
           <p className="text-gray-700 mb-4 text-justify pt-4" data-aos="fade-down"
         data-aos-duration="3000">Education is a fundamental right, yet many students around the world face significant financial barriers that prevent them from accessing the learning opportunities they deserve. If you are one of these students, know that your dreams and aspirations are incredibly valuable, and your determination can open doors that may seem closed. Remember, there are numerous resources available, such as scholarships, grants, community programs, and online courses, designed to support individuals like you. Keep believing in yourself and stay persistent in your pursuit of knowledge. Reach out to mentors, educators, and organizations dedicated to helping students overcome financial challenges.
            Your passion for learning is your greatest asset, and with perseverance, you can achieve your goals and make a meaningful impact on the world.</p>
+          
           <h2 className="text-2xl font-bold mb-4 text-justify"> <span></span></h2>
           <p className="text-gray-700 mb-4 text-justify">
 </p>

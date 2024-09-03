@@ -7,11 +7,11 @@ const FoodAid = () => {
 
     return(
    <>
-    <PassPro backImgsrc = "../src/images/Web-Icon.png "
-      secImg = "../src/images/food.jpg"
+    <PassPro backImgsrc = "../../public/Web-Icon.png "
+      secImg = "../../public/food.jpg"
       title = "Food Distribute"
       p = "Food Aid At Help Human rights, we believe that access to nutritious food is a fundamental human right. Our Food Aid program is dedicated to combating hunger and food insecurity within
-       our community. We provide essential meals and groceries to individuals and families in need, 
+       our community We provide essential meals and groceries to individuals and families in need, 
        ensuring that no one goes hungry. From distributing food packages to organizing community 
        kitchens, our efforts are focused on delivering sustenance and hope to those struggling to make 
        ends meet.Through partnerships with local farmers, food banks, and volunteers, we are able 
@@ -22,7 +22,7 @@ const FoodAid = () => {
     />
     
 
-      <LeftPro imgsrc ="../src/images/food4.jpg"
+      <LeftPro imgsrc ="../../public/food4.jpg"
       heading = "Your Donations Help Us Create This Impact"
        pera ="Donations are the lifeline of our Food Aid program. Every contribution helps us purchase
        food supplies, expand our reach, and improve the quality of our services. 

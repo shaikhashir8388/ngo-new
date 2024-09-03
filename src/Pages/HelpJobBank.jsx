@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import backImage from '../images/backreomove.png';
+import backImage from '../../public/backreomove.png';
 
 const HelpJobBank = () => {
   const [step, setStep] = useState(1);

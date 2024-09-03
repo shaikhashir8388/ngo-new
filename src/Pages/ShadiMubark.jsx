@@ -1,5 +1,5 @@
-import React from 'react';
-import backgroundImage from '../images/Web-Icon.png';
+
+import backgroundImage from '../../public/Web-Icon.png';
 import AOS from 'aos';
 import { NavLink } from 'react-router-dom';
 import Services from './Services';
@@ -27,8 +27,8 @@ function ShadiMubark() {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col">
-              <img src="../src/images/hall.jpg" alt="First" className="w-full h-64 object-cover" />
-              <img src="../src/images/hall2.jpg" alt="Second" className="w-full h-64 object-cover" />
+              <img src="../../public/hall.jpg" alt="First" className="w-full h-64 object-cover" />
+              <img src="../../public/hall2.jpg" alt="Second" className="w-full h-64 object-cover" />
             </div>
             <div className="p-8 flex flex-col justify-center">
               <h1 className="text-3xl font-bold mb-4 text-gray-900"><span> Support for Married Poor People </span></h1>

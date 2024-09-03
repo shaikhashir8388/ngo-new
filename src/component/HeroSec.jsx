@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import bgvideo from '../images/video.mp4';
+import bgvideo from '../../public/video.mp4';
 import { FaVolumeUp, FaVolumeMute } from 'react-icons/fa'; // Make sure to install react-icons if not already
 
 const Herosec = () => {
