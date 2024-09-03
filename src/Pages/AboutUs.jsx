@@ -7,7 +7,7 @@ const About = () => {
     <> 
       <PassPro 
         backImgsrc="../../public/Web-Icon.png"
-        secImg="../../public/aboutBanner.jpg"
+        secImg="https://ibb.co/TYVvDvN"
         title="About Us"
         p={`A five years ago help human right organization of Pakistan, a charitable and nonprofit organization
            embarked its journey starting from a small camp established at a densely populated area of Jamsheed
