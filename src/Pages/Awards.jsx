@@ -7,8 +7,8 @@ const Awards = () =>{
 
     return(
    <>    
-     <PassPro backImgsrc = "../../public/Web-Icon.png "
-      secImg = "../../public/aboutBanner.jpg"
+     <PassPro backImgsrc = "/Web-Icon.png "
+      secImg = "/aboutBanner.jpg"
       title = "Awards"
       p = "A four years ago help human right organization of pakistan" 
       rep =" "

@@ -6,7 +6,7 @@ const HelpEducation = () => {
     <>
 
     <div className="relative h-48 bg-contain bg-no-repeat bg-center"  
-    style={{ backgroundImage: "url('../../public/Website-Fave-Icon.png')" }}>
+    style={{ backgroundImage: "url('/Website-Fave-Icon.png')" }}>
       <div className="absolute inset-0 bg-white opacity-0"></div>
       <div className="relative z-10 flex items-center justify-center h-full">
         <h1 className="text-black text-4xl md:text-6xl font-bold" >Free Education</h1>
@@ -16,7 +16,7 @@ const HelpEducation = () => {
        <div className="w-full md:w-1/2 p-4"
         data-aos="fade-down"
         data-aos-duration="3000">
-        <img src="../../public/education.jpg"
+        <img src="/education.jpg"
            
          alt="Descriptive Alt Text" className="rounded-lg shadow-lg" />
       </div>

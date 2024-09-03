@@ -5,8 +5,8 @@ const Health = () => {
   return (
     <>
       <PassPro 
-        backImgsrc="../../public/Web-Icon.png"
-        secImg="../../public/health4.jpg"
+        backImgsrc="/Web-Icon.png"
+        secImg="/health4.jpg"
         title="Care Your Health"
         p={`At Help Human Rights, we are committed to providing essential healthcare services to underserved communities. 
            Our Healthcare Support program focuses on delivering comprehensive medical care to individuals who lack access to basic health services. 
@@ -17,7 +17,7 @@ const Health = () => {
       />
 
       <LeftPro 
-        imgsrc="../../public/health3.jpg"
+        imgsrc="/health3.jpg"
         heading="Your Donations Help Us Create This Impact"
         pera={`Donations are crucial in enabling us to provide high-quality healthcare services. Your contributions directly support the cost of medical supplies, equipment, and medications needed for patient care. 
                With your help, we can ensure that our clinics are well-stocked and equipped to handle a wide range of medical conditions. Financial support also allows us to fund essential services such as health screenings, vaccinations, and treatment for chronic diseases. 
